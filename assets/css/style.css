@@ -133,12 +133,12 @@ h1 {
     font-weight: 600;
     margin-top: 3.5em;
     margin-left: 4em;
-    transform: rotate(18deg);
+    transform: rotate(3deg);
 }
 
 
 p {
-    margin-top: 5em;
+    margin-top: 5.5em;
     color:rgba(48, 48, 48, 0.747);
     font-size: 1em;
     transform: rotate(18deg);
@@ -149,45 +149,21 @@ p {
 /********************Just trying cool animations for other decorations*****************************/
 
 .doodle {
-    margin-left: 58.7vw;
+    margin-left: 50vw;
     margin-top: -3.8vw;
-    
-    
+   
+        
     }
 
-
-    #heart {
-        position: relative;
-        width: 100px;
-        height: 90px;
-        animation: heartbeat 15s infinite;
+/*slide1*/
+    #wind {
+        animation: windbeat 15s infinite;
         
       }
 
 
-      #heart:before,
-      #heart:after {
-        position: absolute;
-        content: "";
-        left: 50px;
-        top: 0;
-        width: 50px;
-        height: 80px;
-        background: rgb(94, 0, 172);
-        border-radius: 20vw 20vw 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-       
-      }
-      #heart:after {
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-      }
-    
-    
-    
-    @keyframes heartbeat
+      
+    @keyframes windbeat
     {
       0%
       {
@@ -217,4 +193,116 @@ p {
 
 
 
+    #dom {
+      width: 38%;
+      transform: translateX(-64vw);
+      position: absolute;
+    }
+
+
+    #s1 p {
+
+      margin-left: 37em;
+      white-space: pre-line;
+      text-align: left;
+      transform: rotate(3deg);
+      font-size: 1em;
     
+    }
+
+    /*slide2*/
+
+    #bottle {
+      
+      animation: shake 0.88s cubic-bezier(.36,.07,.19,.97) infinite;
+      transform: translate3d(0, 0, 0);
+      margin-top: -2vw;
+      margin-right: -17em;
+      
+    }
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+
+
+
+
+    #s2 p {
+
+      margin-left: 50em;
+      white-space: pre-line;
+      text-align: left;
+      position: absolute;
+      margin-top: 10em;
+    }
+
+
+    #s2 a {
+      text-decoration: none;
+      color: rgb(108, 0, 158);
+      font-size: 1.3em;
+      cursor: pointer;
+    }
+
+
+    /******screen in the slide****/
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+    .screen {
+      border: 3px solid rgb(108, 0, 158);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      position: absolute;
+      margin-left: 5em;
+      margin-top: -3em;
+      width: 50vw;
+      height: 45vh;
+    }
+    
+    .top {
+      padding: 10px;
+      background: rgb(108, 0, 158);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-left: -30em;
+    }
+    
+    .content {
+      padding: 10px;
+      text-align: left;
+      white-space: pre-line;
+      font-size: 1em;
+      margin-left: 2em;
+    }
+
+
+    .content a {
+      text-decoration: none;
+      color:rgb(108, 0, 158);
+      cursor: pointer;
+      margin-left: 6em;
+    }
+
+   
