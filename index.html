@@ -26,7 +26,7 @@
         <a href="#s2">2</a>
         <a href="#s3">3</a>
         <a href="#s4">4</a>
-        <a href="#s5">5</a>
+       
     </div>
 
    
@@ -64,11 +64,35 @@
 
         </div>
 
-        <div class="slide" id="s3"><h1>Slide 3</h1><P>text1</P></div>
+        <div class="slide" id="s3"><h1>Les écouteurs d'événements | Event Listener</h1><img src="assets/images/balloon.svg" class="doodle" id="balloon"><P>Ils permettent d'agir avec les actions des utilisateurs
+            (click sur un bouton par exemple)
 
-        <div class="slide" id="s4"><h1>Slide 4</h1><P>text1</P></div>
+            On utilise // addEventListener
 
-        <div class="slide" id="s5"><h1>Slide 5</h1><P>text1</P></div>
+            Il existe : 
+            - Les événements souris (MouseEvent : mousedown, mouseup, click, dblclick, mousemove, etc) 
+            - Les événements tactiles (ToucheEvent : touchstart, touchmove, ...) --> uniquement pour smartphones et tablettes
+            - Les événements clavier (KeyboardEvent : keydown, keypress, ...  )
+            - Les événements de page (focus, blur, change, submit, ...)
+            - Les événements fenêtre (scroll, resize, load, etc)
+
+            A noter qu'il est possible de prévoir 2 événements selon la détection du support (réaction tactile ou souris)
+            ou via une library <a href="https://github.com/ftlabs/fastclick" target="_blank"> > FastClick</a>
+        </P>
+        <a id="ressources" href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank"> Des ressources d'événements 
+            > par ici</a>
+    </div>
+
+        <div class="slide" id="s4"><h1>Bloquer des événements</h1><img src="assets/images/stop.svg" class="doodle" id="stop"><P>...Certaines actions peuvent être stoppées. Ceci afin d'empêcher des clicks accidentels par exemple
+            // preventDefautl()
+            // stopPropagation()
+            sont des possibilités.
+
+            <a href="./exemple-2.html" target="_blank">Passons désormais à l'action ! 
+                > Une démo vaut mille mots</a> 
+        </P></div>
+
+        
 
     </div>
     
