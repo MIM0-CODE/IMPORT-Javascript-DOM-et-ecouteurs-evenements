@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="assets/css/style-exemple-2.css">
 
 
+    <script src="./assets/touchemulator-master/touch-emulator.js"></script>
+    <script> TouchEmulator(); </script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+
     <title>Ecouteurs d'événements | Events Listener</title>
 
 
@@ -97,7 +102,6 @@ function moustache() {                                  //Il est possible d'atta
 
 
 
-
 //La partie formulaire ! Intéragissons...avec le bouton
 var button = document.getElementById("button");                 //Jusque là tout baigne, on vient comme d'hab' récupérer l'élément visé
 
@@ -134,9 +138,19 @@ var onButtonClick = function() {
 }, false);*/ 
     
   
-         
-            
+     
 
+
+
+
+
+            
+////////////////////
+function moustacheMobile(ev) {
+    var moustache = document.getElementById("stache");
+    moustache.style.display = "block";  
+}
+document.body.addEventListener('touchmove', moustacheMobile, false); // test library HAMMER.js pour les fonctions touch : http://hammerjs.github.io/touch-emulator/
 
 
 

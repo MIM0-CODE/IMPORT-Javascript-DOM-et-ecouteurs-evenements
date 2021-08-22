@@ -28,10 +28,10 @@
     
        #stache {
            display: none;
-           margin-top:33vh;
-           margin-left: 67vh;
+           margin-top: 25vh;
+           margin-left: 12.5vh;
            z-index: 50;
-           max-width: 5%;
+           max-width: 13%;
            height: auto;
        }
     
