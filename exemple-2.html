@@ -91,12 +91,20 @@ clickHubert.addEventListener("click", onClick);            //click=correspond à
 
 
 
+
+
 // Marie-Anto se laisse pousser la moustache
 function moustache() {                                  //Il est possible d'attacher directement un événement sur l'élement html (voir plus haut)
     var moustache = document.getElementById("stache");
     moustache.style.display = "block";  
                  
 }
+////////////////////                                    // test library HAMMER.js pour les fonctions touch : http://hammerjs.github.io/touch-emulator/
+function moustacheMobile(ev) {
+    var moustache = document.getElementById("stache");
+    moustache.style.display = "block";  
+}
+document.body.addEventListener('touchmove', moustacheMobile, false); 
 
 
 
@@ -145,15 +153,6 @@ var onButtonClick = function() {
 
 
             
-////////////////////
-function moustacheMobile(ev) {
-    var moustache = document.getElementById("stache");
-    moustache.style.display = "block";  
-}
-document.body.addEventListener('touchmove', moustacheMobile, false); // test library HAMMER.js pour les fonctions touch : http://hammerjs.github.io/touch-emulator/
-
-
-
 ////////////////////////
 function overlay() {
   document.getElementById("formulaire").style.width = "100%";   //fonction pour ouvrir l'overlay quand on clique sur le lien
