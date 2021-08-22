@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 
-    <script type='application/javascript' src='/path/to/fastclick.js'></script>
-
+   
     <link rel="stylesheet" href="assets/css/style-exemple-2-mobile.css">
 
     <link rel="stylesheet" href="assets/css/style-exemple-2.css">
@@ -90,7 +89,15 @@ clickHubert.addEventListener("click", onClick);            //click=correspond à
 // Marie-Anto se laisse pousser la moustache
 function moustache() {
     var moustache = document.getElementById("stache");
-    moustache.style.display = "block";                      //Il est possible d'attacher directement un événement sur l'élement html (voir plus haut)
+    moustache.style.display = "block";   
+    
+    var overEvent='mouseover';
+
+if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+
+  overEvent='touchmove';
+
+}                  //Il est possible d'attacher directement un événement sur l'élement html (voir plus haut)
 }
 
 
@@ -141,14 +148,6 @@ function overlay() {
 function closeOverlay() {
   document.getElementById("formulaire").style.width = "0%";    //fonction pour fermer l'overlay quand on clique sur X  
 } 
-
-
-/////////Fast Click
-if ('addEventListener' in document) {
-	document.addEventListener('DOMContentLoaded', function() {
-		FastClick.attach(document.body);
-	}, false);
-}
 
 </script>
     
