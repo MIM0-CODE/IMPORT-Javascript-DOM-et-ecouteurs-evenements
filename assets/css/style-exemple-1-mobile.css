@@ -61,10 +61,11 @@
     
         text-decoration: none;
         font-weight: 800;
-        display: inline-block;
         color: #ff9137;
-        margin-left: 5em;
-        margin-top: 85vh;
+        margin-left: 1em;
+        margin-top: 94vh;
+        display: inline-block;
+        width: 40%;
     
     }
 
