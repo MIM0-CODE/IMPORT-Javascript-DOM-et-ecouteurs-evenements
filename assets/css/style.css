@@ -317,7 +317,7 @@ p {
     #balloon {
       
       animation: float 8s infinite;
-      margin-top: -2vw;
+      margin-top: -3vw;
       margin-right: -25em;
       
     }
@@ -338,17 +338,24 @@ p {
     }
 
     #s3 p {
-      margin-top: -20vh;
+      margin-top: -24vh;
       white-space: pre-line;
-      transform: rotate(3deg);
+      transform: rotate(1deg);
       text-align: left;
-      margin-left: 25em;
+      margin-left: 24em;
+      width: 70%;
     }
 
+    #s3 h1 {
+      transform: rotate(1deg);
+    }
+
+  
     #s3 a {
 text-decoration: none;
 color:rgb(108, 0, 158);
 cursor: pointer;
+
     }
 
     #ressources {

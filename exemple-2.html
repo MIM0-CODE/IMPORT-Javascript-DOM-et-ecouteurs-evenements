@@ -24,7 +24,7 @@
 
 <body>
 
-<img id="marieanto" onmouseover="moustache(); ontouchmove=moustacheSmartphone()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
+<img id="marieanto" onmouseover="moustache()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
 <img id="stache" src="assets/images/moustache.svg" alt="go be mustache">
 <img id="hubert" src="assets/images/hubert.svg" alt="The king of cat">
 
@@ -94,9 +94,7 @@ function moustache() {                                  //Il est possible d'atta
 }
 
 
-function moustacheSmartphone() {
-    moustache.addEventListener("touchmove", false);
-}
+
 
 
 
@@ -129,6 +127,11 @@ var onButtonClick = function() {
   event.preventDefault()
   
 }); //preventDefault() bloque les actions (utile pour celles par défaut que nous ne souhaitons pas pour les visiteurs...(car oui, la vérité est ailleurs)
+
+
+/*document.body.addEventListener('touchmove', function(event) {     // on peut gérer les intéractions onTouch ou Mousmove selon le device
+  event.preventDefault();
+}, false);*/ 
     
   
          
