@@ -138,8 +138,8 @@
     
     
         #dom {
-          width: 100%;
-          transform: translateX(-52vw);
+          width: 90%;
+          transform: translateX(-47vw);
           position: absolute;
           margin-top: 0.5em;
         }
@@ -151,7 +151,7 @@
           white-space: pre-line;
           text-align: left;
           font-size: 1em;
-          margin-top: 40vh;
+          margin-top: 32vh;
         
         }
     
