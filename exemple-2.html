@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
 
 <body>
 
-<img id="marieanto" onmouseover="moustache()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
+<img id="marieanto" onmouseover="moustache(); ontouchmove=moustacheSmartphone()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
 <img id="stache" src="assets/images/moustache.svg" alt="go be mustache">
 <img id="hubert" src="assets/images/hubert.svg" alt="The king of cat">
 
@@ -87,17 +87,15 @@ clickHubert.addEventListener("click", onClick);            //click=correspond à
 
 
 // Marie-Anto se laisse pousser la moustache
-function moustache() {
+function moustache() {                                  //Il est possible d'attacher directement un événement sur l'élement html (voir plus haut)
     var moustache = document.getElementById("stache");
-    moustache.style.display = "block";   
-    
-    var overEvent='mouseover';
+    moustache.style.display = "block";  
+                 
+}
 
-if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
 
-  overEvent='touchmove';
-
-}                  //Il est possible d'attacher directement un événement sur l'élement html (voir plus haut)
+function moustacheSmartphone() {
+    moustache.addEventListener("touchmove", false);
 }
 
 
