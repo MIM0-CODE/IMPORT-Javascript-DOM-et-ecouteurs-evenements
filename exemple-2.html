@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/css/style-exemple-2.css">
 
 
-    <script src="./assets/touchemulator-master/touch-emulator.js"></script>
-    <script> TouchEmulator(); </script>
+    <!--<script src="./assets/touchemulator-master/touch-emulator.js"></script>
+    <script> TouchEmulator(); </script>-->
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 
@@ -29,7 +29,7 @@
 
 <body>
 
-<img id="marieanto" onmouseover="moustache()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
+<img id="marieanto" onmouseover="moustache()" src="assets/images/marieanto.svg" alt="Marie-Anto est dans la place"> <!--fonction d'événement (méthode rapide) de passage de souris (onmouseover) | magie ! la moustache apparaît au passage de notre souris-->
 <img id="stache" src="assets/images/moustache.svg" alt="go be mustache">
 <img id="hubert" src="assets/images/hubert.svg" alt="The king of cat">
 
@@ -114,7 +114,7 @@ document.body.addEventListener('touchmove', moustacheMobile, false);
 var button = document.getElementById("button");                 //Jusque là tout baigne, on vient comme d'hab' récupérer l'élément visé
 
 var onButtonClick = function() {
-    var name = document.getElementById("name").value;           //Ok, là ça se corse un peu...en fait, c'est juste des conditions qui viennent agrémenter
+    var name = document.getElementById("name").value;           //hop ! des conditions qui viennent agrémenter
     var goodie = document.getElementById("goodie").value;
     var choix;
     if (goodie === "rien") {
